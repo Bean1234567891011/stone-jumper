@@ -14,7 +14,7 @@
         <div id = "easy">
             
             <button class="stone1"><a href="#" onClick="stoneEasyOne()"></a></button>
-            <button class="stone2"><a href="#" onClick="location.reload();"></a></button>
+            <button class="stone2"><a href="#" onClick="lR();"></a></button>
 
             <style>
                 .stone1 {
@@ -62,6 +62,10 @@
 	            document.getElementById("first").style.display = "none";
                 document.getElementById("hard").style.display = "block";
             }
+		
+	function lR() {
+		location.reload();
+	}
 		
         </script>
         <style>
