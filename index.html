@@ -14,7 +14,7 @@
         <div id = "easy">
             
             <button class="stone1"><a href="#" onClick="stoneEasyOne()"></a></button>
-            <button class="stone2"><a href="#" onClick="lR();"></a></button>
+            <button class="stone2"><a href="#" onClick="stoneEasyTwo()"></a></button>
 
             <style>
                 .stone1 {
@@ -48,6 +48,13 @@
             
         </div>
 
+		
+		
+	<div id = "easyOne">
+            <button class="stone1"><a href="#" onClick="stoneEasyOne()"></a></button>
+            <button class="stone2"><a href="#" onClick="stoneEasyTwo()"></a></button>
+        </div>
+		
         <script>
         
         function play() {
@@ -63,9 +70,10 @@
                 document.getElementById("hard").style.display = "block";
             }
 		
-	function lR() {
-		location.reload();
-	}
+	function stoneEasyOne() {
+            document.getElementById("easy").style.display = "none";
+            document.getElementById("easyOne").style.display = "block";
+            }
 		
         </script>
         <style>
