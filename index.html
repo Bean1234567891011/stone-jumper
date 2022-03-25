@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Stone Jumper</title>
+	</head>
+	<body>
+		<div id = "first">
+        <center><h1>Welcome To Stone Jumper<br>Click Play To Begin</h1></center>
+        <center><button class="playgame"><a href="#" onClick="play()"><p class="play"><u class = "playu">Play(Easy)</u></p></a></button></center>
+        <center><button class="playgame"><a href="#" onClick="play1()"><p class="play"><u class = "playu">Play(Normal)</u></p></a></button></center>
+        <center><button class="playgame"><a href="#" onClick="play2()"><p class="play"><u class = "playu">Play(Hard)</u></p></a></button></center>
+       </div>
+
+        <div id = "easy">
+            
+            <button class="stone1"><a href="#" onClick="stoneEasyOne()"></a></button>
+            <button class="stone2"><a href="#" onClick="stoneEasyTwo()"></a></button>
+
+            <style>
+                .stone1 {
+                    height: 300px;
+                    width: 300px;
+                    background-color: gray;
+                    border-radius: 50%;
+                    margin-top: 300px;
+                    left: 35%;
+                }
+                .stone2 {
+                    height: 300px;
+                    width: 300px;
+                    background-color: gray;
+                    border-radius: 50%;
+                    margin-top: 300px;
+                    left: 65%;
+                }
+            </style>
+        </div>
+
+        <div id = "medium">
+           
+        </div>
+
+         <div id = "hard">
+            
+        </div>
+
+        <script>
+        
+        function play() {
+	            document.getElementById("first").style.display = "none";
+                document.getElementById("easy").style.display = "block";
+            }
+        function play1() {
+	            document.getElementById("first").style.display = "none";
+                document.getElementById("medium").style.display = "block";
+            }
+        function play2() {
+	            document.getElementById("first").style.display = "none";
+                document.getElementById("hard").style.display = "block";
+            }
+
+        </script>
+        <style>
+            body {
+	          background-color: #fa4f00;
+            }
+
+            #easy, #normal, #hard {
+            display:none;
+            }
+
+
+        </style>
+	</body>
+</html>
