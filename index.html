@@ -26,7 +26,7 @@
 	</div>
         
 	<div id = "easy">
-	    <center><h1>Round 1</h1></center>
+            <center><h1>Round 1</h1></center>
             <button class="stone1"><a href="#" onClick="stoneEasyOne()"><p>Left</p></a></button>
             <button class="stone2"><a href="#" onClick="stoneEasyTwo()"><p>Right</p></a</button>
 
@@ -62,16 +62,17 @@
             
         </div>
 
-
-        <div id = "easy1">
+		
+		
+	    <div id = "easy1">
             
-		<center><h1>Round 2</h1></center>
+            <center><h1>Round 2</h1></center>
             
             <button class="stone1"><a href="#" onClick="stoneEasyThree()"><p>Left</p></a></button>
             <button class="stone2"><a href="#" onClick="stoneEasyFour()"><p>Right</p></a></button>
         </div>
-		    
-	<div id = "easy2">
+
+        <div id = "easy2">
             
             <center><h1>Round 3</h1></center>
             
@@ -80,6 +81,14 @@
         </div>
 		    
 	<div id = "easy3">
+            
+            <center><h1>Round 4</h1></center>
+            
+            <button class="stone1"><a href="#" onClick="stoneEasySeven()"><p>Left</p></a></button>
+            <button class="stone2"><a href="#" onClick="stoneEasyEight()"><p>Right</p></a></button>
+        </div>
+		    
+	<div id = "easy4">
             
             <center><h1>YOU FINISHED!!!</h1></center>
             
@@ -116,29 +125,39 @@
                 document.getElementById("easy").style.display = "none";
                 document.getElementById("ta").style.display = "block";
             }
-		
-	function stoneEasyThree() {
+
+        function stoneEasyThree() {
+                document.getElementById("easy1").style.display = "none";
+                document.getElementById("easy2").style.display = "block";
+            }   
+
+        function stoneEasyFour() {
                 document.getElementById("easy1").style.display = "none";
                 document.getElementById("ta").style.display = "block";
             }   
 		
-	function stoneEasyFour() {
-                document.getElementById("easy1").style.display = "none";
-                document.getElementById("easy2").style.display = "block";
-            }  
-		
 	function stoneEasyFive() {
+                document.getElementById("easy2").style.display = "none";
+                document.getElementById("ta").style.display = "block";
+            }   
+		
+	function stoneEasySix() {
                 document.getElementById("easy2").style.display = "none";
                 document.getElementById("easy3").style.display = "block";
             }  
 		
-	function stoneEasySix() {
-                document.getElementById("easy2").style.display = "none";
+	function stoneEasySeven() {
+                document.getElementById("easy3").style.display = "none";
+                document.getElementById("easy4").style.display = "block";
+            }  
+		
+	function stoneEasyEight() {
+                document.getElementById("easy3").style.display = "none";
                 document.getElementById("ta").style.display = "block";
             } 
 	
 	function easyFinal() {
-                document.getElementById("easy3").style.display = "none";
+                document.getElementById("easy4").style.display = "none";
                 document.getElementById("first").style.display = "block";
             }  
 		
@@ -157,12 +176,14 @@
                 document.getElementById("first").style.display = "block";
             }  
 		
+		
+        </script>
         <style>
             body {
 	          background-color: #fa4f00;
             }
 
-            #easy, #normal, #hard, #easy1, #easy2, #easy3, #ta {
+            #easy, #normal, #hard, #easy1, #easy2, #easy3, #easy4, #ta {
               display:none;
             }
 
