@@ -6,15 +6,22 @@
 	<body>
 		<div id = "first">
         <center><h1>Welcome To Lava Run<br>Click Play To Begin</h1></center>
+        <br><br><br><br>
         <center><button class="playgame"><a href="#" onClick="play()"><p class="play"><u class = "playu">Play(Easy)</u></p></a></button></center>
         <center><button class="playgame"><a href="#" onClick="play1()"><p class="play"><u class = "playu">Play(Normal)</u></p></a></button></center>
         <center><button class="playgame"><a href="#" onClick="play2()"><p class="play"><u class = "playu">Play(Hard)</u></p></a></button></center>
+       <br><br><br><br><br><br><br>
+       <center><h2>How To Play! <br> Click on the right stone. 
+       <br> The wrong one will reset your progress. 
+       <br> Keep Clicking until you get to the finish screen!
+       <br> Objective: Use muscle memory to get to the end if you reset. 
+       <br> Get to the end and don't fall into the LAVA!!!</h2></center>
        </div>
 
         <div id = "easy">
-            
-            <button class="stone1"><a href="#" onClick="stoneEasyOne()"></a></button>
-            <button class="stone2"><a href="#" onClick="stoneEasyTwo()"></a></button>
+            <center><h1>Round 1</h1></center>
+            <button class="stone1"><a href="#" onClick="stoneEasyOne()"><p>Left</p></a></button>
+            <button class="stone2"><a href="#" onClick="stoneEasyTwo()"><p>Right</p></a</button>
 
             <style>
                 .stone1 {
@@ -50,9 +57,20 @@
 
 		
 		
-	<div id = "easyOne">
-            <button class="stone1"><a href="#" onClick="stoneEasyOne()"></a></button>
-            <button class="stone2"><a href="#" onClick="stoneEasyTwo()"></a></button>
+	    <div id = "easy1">
+            
+            <center><h1>Round 2</h1></center>
+            
+            <button class="stone1"><a href="#" onClick="stoneEasyThree()"><p>Left</p></a></button>
+            <button class="stone2"><a href="#" onClick="stoneEasyFour()"><p>Right</p></a></button>
+        </div>
+
+        <div id = "easy2">
+            
+            <center><h1>Round 3</h1></center>
+            
+            <button class="stone1"><a href="#" onClick="stoneEasyFive()"><p>Left</p></a></button>
+            <button class="stone2"><a href="#" onClick="stoneEasySix()"><p>Right</p></a></button>
         </div>
 		
         <script>
@@ -61,6 +79,27 @@
 	            document.getElementById("first").style.display = "none";
                 document.getElementById("easy").style.display = "block";
             }
+
+        function stoneEasyOne() {
+                document.getElementById("easy").style.display = "none";
+                document.getElementById("easy1").style.display = "block";
+            }
+
+        function stoneEasyTwo() {
+                document.getElementById("easy").style.display = "none";
+                document.getElementById("first").style.display = "block";
+            }
+
+        function stoneEasyThree() {
+                document.getElementById("easy1").style.display = "none";
+                document.getElementById("easy2").style.display = "block";
+            }   
+
+            function stoneEasyFour() {
+                document.getElementById("easy1").style.display = "none";
+                document.getElementById("first").style.display = "block";
+            }   
+ 
         function play1() {
 	            document.getElementById("first").style.display = "none";
                 document.getElementById("medium").style.display = "block";
@@ -70,10 +109,7 @@
                 document.getElementById("hard").style.display = "block";
             }
 		
-	function stoneEasyOne() {
-            document.getElementById("easy").style.display = "none";
-            document.getElementById("easyOne").style.display = "block";
-            }
+	    
 		
         </script>
         <style>
@@ -81,8 +117,8 @@
 	          background-color: #fa4f00;
             }
 
-            #easy, #normal, #hard {
-            display:none;
+            #easy, #normal, #hard, #easy1, #easy2 {
+              display:none;
             }
 
 
