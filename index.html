@@ -20,7 +20,12 @@
        <br> Get to the end and don't fall into the LAVA!!!</h2></center>
        </div>
 
-        <div id = "easy">
+	<div id = "ta">
+	    <center><h1>Try Again</h1></center>
+            <button class="stone"><a href="#" onClick="goHome()"><p>Home</p></a></button>
+	</div>
+        
+	<div id = "easy">
             <center><h1>Round 1</h1></center>
             <button class="stone1"><a href="#" onClick="stoneEasyOne()"><p>Left</p></a></button>
             <button class="stone2"><a href="#" onClick="stoneEasyTwo()"><p>Right</p></a</button>
@@ -118,22 +123,22 @@
 
         function stoneEasyTwo() {
                 document.getElementById("easy").style.display = "none";
-                document.getElementById("first").style.display = "block";
+                document.getElementById("ta").style.display = "block";
             }
 
         function stoneEasyThree() {
                 document.getElementById("easy1").style.display = "none";
-                document.getElementById("easy2").style.display = "block";
+                document.getElementById("ta").style.display = "block";
             }   
 
         function stoneEasyFour() {
                 document.getElementById("easy1").style.display = "none";
-                document.getElementById("first").style.display = "block";
+                document.getElementById("ta").style.display = "block";
             }   
 		
 	function stoneEasyFive() {
                 document.getElementById("easy2").style.display = "none";
-                document.getElementById("first").style.display = "block";
+                document.getElementById("ta").style.display = "block";
             }   
 		
 	function stoneEasySix() {
@@ -148,10 +153,10 @@
 		
 	function stoneEasyEight() {
                 document.getElementById("easy3").style.display = "none";
-                document.getElementById("first").style.display = "block";
+                document.getElementById("ta").style.display = "block";
             }   
 		
-	function easyFinal() {
+	function goHome() {
                 document.getElementById("easy4").style.display = "none";
                 document.getElementById("first").style.display = "block";
             }  
@@ -173,7 +178,7 @@
 	          background-color: #fa4f00;
             }
 
-            #easy, #normal, #hard, #easy1, #easy2, #easy3, #easy4 {
+            #easy, #normal, #hard, #easy1, #easy2, #easy3, #easy4, #ta {
               display:none;
             }
 
