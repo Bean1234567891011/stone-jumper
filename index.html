@@ -168,6 +168,34 @@
 	    <button class="stone5"><a href="#" onClick="stoneNormSix()"><p>Middle Right</p></a></button>
 		    <button class="stone6"><a href="#" onClick="stoneNormFive()"><p>Right</p></a></button>
 	</div>
+	<div id = "medium3">
+		<center><h1>Round 4</h1></center>
+            <button class="stone3"><a href="#" onClick="stoneNormSeven()"><p>Left</p></a></button>
+		<button class="stone4"><a href="#" onClick="stoneNormEight()"><p>Middle Left</p></a></button>
+	    <button class="stone5"><a href="#" onClick="stoneNormEight()"><p>Middle Right</p></a></button>
+		    <button class="stone6"><a href="#" onClick="stoneNormEight()"><p>Right</p></a></button>
+	</div>
+	<div id = "medium4">
+		<center><h1>Round 5</h1></center>
+            <button class="stone3"><a href="#" onClick="stoneNormNine()"><p>Left</p></a></button>
+		<button class="stone4"><a href="#" onClick="stoneNormNine()"><p>Middle Left</p></a></button>
+	    <button class="stone5"><a href="#" onClick="stoneNormTen()"><p>Middle Right</p></a></button>
+		    <button class="stone6"><a href="#" onClick="stoneNormNine()"><p>Right</p></a></button>
+	</div>
+	<div id = "medium5">
+		<center><h1>Round 6</h1></center>
+            <button class="stone3"><a href="#" onClick="stoneNormTwelve()"><p>Left</p></a></button>
+		<button class="stone4"><a href="#" onClick="stoneNormEleven()"><p>Middle Left</p></a></button>
+	    <button class="stone5"><a href="#" onClick="stoneNormEleven()"><p>Middle Right</p></a></button>
+		    <button class="stone6"><a href="#" onClick="stoneNormEleven()"><p>Right</p></a></button>
+	</div>
+	<div id = "medium6">
+            
+            <center><h1>YOU FINISHED!!!</h1></center>
+            
+            <button class="stone"><a href="#" onClick="normFinal()"><p>Home</p></a></button>
+           
+	<style>
 		
         <script>
         
@@ -247,6 +275,51 @@
                 document.getElementById("medium2").style.display = "block";
             }
 		
+	function stoneNormSix() {
+	        document.getElementById("medium2").style.display = "none";
+                document.getElementById("medium3").style.display = "block";
+            }
+		
+	function stoneNormFive() {
+                document.getElementById("medium2").style.display = "none";
+                document.getElementById("ta").style.display = "block";
+            } 
+		
+	function stoneNormSeven() {
+	        document.getElementById("medium3").style.display = "none";
+                document.getElementById("medium4").style.display = "block";
+            }
+		
+	function stoneNormEight() {
+                document.getElementById("medium3").style.display = "none";
+                document.getElementById("ta").style.display = "block";
+            } 
+		
+	function stoneNormTen() {
+	        document.getElementById("medium4").style.display = "none";
+                document.getElementById("medium5").style.display = "block";
+            }
+		
+	function stoneNormNine() {
+                document.getElementById("medium4").style.display = "none";
+                document.getElementById("ta").style.display = "block";
+            } 
+		
+	function stoneNormTwelve() {
+	        document.getElementById("medium5").style.display = "none";
+                document.getElementById("medium6").style.display = "block";
+            }
+		
+	function stoneNormEleven() {
+                document.getElementById("medium5").style.display = "none";
+                document.getElementById("ta").style.display = "block";
+            } 
+		
+	function normFinal() {
+                document.getElementById("medium6").style.display = "none";
+                document.getElementById("first").style.display = "block";
+            }  
+		
         function play2() {
 	        document.getElementById("first").style.display = "none";
                 document.getElementById("hard").style.display = "block";
@@ -264,7 +337,7 @@
 	          background-color: #fa4f00;
             }
 
-            #easy, #medium, #hard, #easy1, #easy2, #easy3, #easy4, #ta, #medium1, #medium2 {
+            #easy, #medium, #hard, #easy1, #easy2, #easy3, #easy4, #ta, #medium1, #medium2, #medium3, #medium4, #medium5, #medium6g {
               display:none;
             }
 
