@@ -154,6 +154,13 @@
 	</style>
 		
         </div>
+	<div id = "medium1">
+		<center><h1>Round 2</h1></center>
+            <button class="stone3"><a href="#" onClick="stoneNormThree()"><p>Left</p></a></button>
+		<button class="stone4"><a href="#" onClick="stoneNormFour()"><p>Middle Left</p></a></button>
+	    <button class="stone5"><a href="#" onClick="stoneNormThree()"><p>Middle Right</p></a></button>
+		    <button class="stone6"><a href="#" onClick="stoneNormthree()"><p>Right</p></a></button>
+	</div>
 		
         <script>
         
@@ -212,6 +219,12 @@
 	            document.getElementById("first").style.display = "none";
                 document.getElementById("medium").style.display = "block";
             }
+		
+	function stoneNormTwo() {
+	            document.getElementById("medium").style.display = "none";
+                document.getElementById("medium1").style.display = "block";
+            }
+		
         function play2() {
 	            document.getElementById("first").style.display = "none";
                 document.getElementById("hard").style.display = "block";
