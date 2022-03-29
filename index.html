@@ -15,12 +15,12 @@
         <center><button class="playgame" onClick="play1()"><a href="#" onClick="play1()"><p class="play"><i class="fa-solid fa-face-meh fa-lg"></i> Normal</p></a></button></center>
         <center><button class="playgame" onClick="play2()"><a href="#" onClick="play2()"><p class="play"><i class="fa-solid fa-face-angry fa-lg"></i> Hard</p></a></button></center>
        <br><br><br><br>
-       <center><h2>How To Play! <br> Click on the right stone. 
+       <div id = "howtoplay"><h4>How To Play! <br> Click on the right stone. 
        <br> The wrong one will reset your progress. 
        <br> Keep Clicking until you get to the finish screen!
        <br> At the top of the screen you can see what round of the mode your on.
        <br> Objective: Use muscle memory to get to the end if you reset. 
-       <br> Get to the end and don't fall into the LAVA!!!</h2></center>
+	       <br> Get to the end and don't fall into the LAVA!!!</h4></div>
        </div>
 
 	<div id = "ta">
@@ -34,6 +34,15 @@
 		<button class="stone2"><a href="#" onClick="stoneEasyTwo()"><p>Right</p></a></button>
 
             <style>
+		    #howtoplay {
+			width:300px;
+			background-color:whitesmoke;
+			position:fixed;
+			left:50%;
+			    right:50%;
+			    border-radius:5px;
+		    }
+		    
 		    button {
 			    cursor:pointer;
 		    }
@@ -128,6 +137,7 @@
            <style>
 		   body, button, a {
 			 font-family: 'Open Sans', sans-serif;  
+			   text-align:center;
 		   }
 		   
                 .stone7 {
